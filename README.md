@@ -11,4 +11,4 @@ Toast mesajı ile uyarı
 Uygulamayı aç, notunu yaz, "Kaydet" butonuna bas.
 
 ## Geliştirici
- Yahya Mohammed
+Hudhaifa Omar Farooq
