@@ -37,11 +37,16 @@ public class MainActivity extends AppCompatActivity {
                 calendar.set(Calendar.MINUTE, timePicker.getMinute());
                 calendar.set(Calendar.SECOND, 0);
 
+                if (calendar.before(Calendar.getInstance())) {
+                    calendar.add(Calendar.DATE, 1); // geçmiş saatse yarına ayarla
+                }
+
                 Intent intent = new Intent(MainActivity.this, ReminderReceiver.class);
                 intent.putExtra("note", note);
 
                 PendingIntent pendingIntent = PendingIntent.getBroadcast(
-                        MainActivity.this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
+                        MainActivity.this, 0, intent,
+                        PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
                 );
 
                 AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
