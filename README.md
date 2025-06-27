@@ -1,5 +1,5 @@
 # NotHatirlatmaApp
-Basit not alma ve hatırlatma uygulaması
+Android tabanlı basit bir "not alma ve hatırlatma uygulaması". Kullanıcılar bir not girerek uygulama üzerinden kolayca bu notu kaydedebilir. Uygulamanın amacı, kullanıcıya basit ve işlevsel bir şekilde notlarını hatırlatabilecek bir yapı sunmaktır.
 
 
 ## Özellikler
